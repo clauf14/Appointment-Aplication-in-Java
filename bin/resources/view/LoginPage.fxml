@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginPageController">
+   <left>
+      <ImageView fitHeight="426.0" fitWidth="265.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../images/Football.png" />
+         </image>
+      </ImageView>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="42.0" layoutY="121.0" text="Username">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></Label>
+            <Label layoutX="44.0" layoutY="172.0" text="Password">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></Label>
+            <Button fx:id="loginButton" layoutX="79.0" layoutY="265.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: #FFC700;" text="Login">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></Button>
+            <Button fx:id="quitButton" layoutX="79.0" layoutY="306.0" mnemonicParsing="false" onAction="#quitButtonOnAction" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: #FFC700;" text="Quit">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></Button>
+            <Button fx:id="registerButton" layoutX="112.0" layoutY="350.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="31.0" prefWidth="124.0" style="-fx-background-color: #FFC700;" text="Register">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></Button>
+            <TextField fx:id="usernameTextField" layoutX="145.0" layoutY="116.0" prefHeight="33.0" prefWidth="160.0" promptText="Username" />
+            <ImageView fitHeight="53.0" fitWidth="56.0" layoutX="148.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Untitled%20design.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="messageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="223.0" prefHeight="21.0" prefWidth="299.0" style="-fx-text-fill: red;">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font></Label>
+            <PasswordField fx:id="passwordTextField" layoutX="146.0" layoutY="167.0" prefHeight="33.0" prefWidth="160.0" promptText="Password" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

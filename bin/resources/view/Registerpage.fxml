@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegisterPageController">
+   <top>
+      <AnchorPane prefHeight="57.0" prefWidth="800.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="31.0" prefWidth="69.0" style="-fx-background-color: FFC700;" text="⬅" />
+            <Label alignment="CENTER" layoutX="253.0" layoutY="11.0" prefHeight="21.0" prefWidth="295.0" text="User Registration" textFill="#ffc700">
+               <font>
+                  <Font name="Arial Black" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="249.0" layoutY="89.0" text="First name">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="250.0" layoutY="151.0" text="Last name">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="251.0" layoutY="215.0" text="Username">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="254.0" layoutY="278.0" text="Password">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="219.0" layoutY="349.0" text="Confirm password">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></Label>
+            <Button fx:id="registerButton" layoutX="291.0" layoutY="455.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="31.0" prefWidth="219.0" style="-fx-background-color: FFC700;" text="Register">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></Button>
+            <TextField fx:id="firstNameField" layoutX="385.0" layoutY="84.0" promptText="First name">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="lastNameField" layoutX="385.0" layoutY="146.0" promptText="Last name">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="usernameField" layoutX="385.0" layoutY="210.0" promptText="Username">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></TextField>
+            <PasswordField fx:id="passwordField" layoutX="385.0" layoutY="273.0" promptText="Password">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></PasswordField>
+            <PasswordField fx:id="confirmPasswordField" layoutX="385.0" layoutY="344.0" promptText="Confirm password">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></PasswordField>
+            <Label fx:id="messageLabel" alignment="CENTER" layoutX="86.0" layoutY="406.0" prefHeight="23.0" prefWidth="630.0">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

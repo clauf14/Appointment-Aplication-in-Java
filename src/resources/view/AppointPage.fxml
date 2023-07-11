@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AppointPageController">
+   <center>
+      <AnchorPane prefHeight="696.0" prefWidth="1080.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="318.0" layoutY="165.0" prefHeight="21.0" prefWidth="97.0" text="Username">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="279.0" layoutY="227.0" prefHeight="23.0" prefWidth="177.0" text="Location name">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="318.0" layoutY="293.0" prefHeight="21.0" prefWidth="97.0" text="Price">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="287.0" layoutY="359.0" prefHeight="23.0" prefWidth="160.0" text="Location adress">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="284.0" layoutY="435.0" prefHeight="23.0" prefWidth="167.0" text="Appointment date">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="284.0" layoutY="508.0" prefHeight="23.0" prefWidth="167.0" text="Available places">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameField" editable="false" layoutX="582.0" layoutY="161.0" prefWidth="220.0">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="locationNameField" editable="false" layoutX="582.0" layoutY="223.0" prefWidth="220.0">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="priceField" editable="false" layoutX="582.0" layoutY="289.0" prefWidth="220.0">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="adressField" editable="false" layoutX="582.0" layoutY="355.0" prefHeight="31.0" prefWidth="220.0">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="appointmentDate" editable="false" layoutX="582.0" layoutY="431.0" prefWidth="220.0">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="availablePlaces" editable="false" layoutX="582.0" layoutY="504.0" prefWidth="220.0">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></TextField>
+            <Button fx:id="deleteButtonAppointment" layoutX="963.0" layoutY="630.0" mnemonicParsing="false" onAction="#deleteButtonAppointmentOnAction" text="Delete" textFill="RED">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></Button>
+            <Label alignment="CENTER" layoutX="269.0" layoutY="59.0" prefHeight="21.0" prefWidth="543.0" style="-fx-text-fill: black;" text="Here is your current appointment!" textFill="#00b500">
+               <font>
+                  <Font name="Arial Black" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="307.0" layoutY="631.0" prefHeight="32.0" prefWidth="646.0" style="-fx-text-fill: red;" text="Warning! If you press this button you appointment will be deleted imediately!" textFill="#00b500">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="24.0" prefWidth="1280.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="menuButton" alignment="CENTER" layoutX="70.0" layoutY="283.0" mnemonicParsing="false" onAction="#menuButtonOnAction" style="-fx-background-color: FFC700;" text="Menu">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="38.0" layoutY="380.0" mnemonicParsing="false" style="-fx-background-color: FFC700;" text="Appointment">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="15.0" layoutY="115.0" text="FOOTBALLIFY" textFill="#ffcc00">
+               <font>
+                  <Font name="Arial Black" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="logOutButton" layoutX="58.0" layoutY="587.0" mnemonicParsing="false" onAction="#logOutButtonOnAction" style="-fx-background-color: FFC700;" text="Log Out">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="quitButton" layoutX="73.0" layoutY="633.0" mnemonicParsing="false" onAction="#quitButtonOnAction" style="-fx-background-color: FFC700;" text="Quit">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="103.0" fitWidth="106.0" layoutX="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/288976.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="accountButton" alignment="CENTER" layoutX="58.0" layoutY="331.0" mnemonicParsing="false" onAction="#accountButtonOnAction" style="-fx-background-color: FFC700;" text="Account">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

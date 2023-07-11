@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="mainBorderPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuPageController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="CENTER" layoutX="70.0" layoutY="283.0" mnemonicParsing="false" style="-fx-background-color: FFC700;" text="Menu">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></Button>
+            <Button fx:id="appointmentButton" layoutX="38.0" layoutY="380.0" mnemonicParsing="false" onAction="#appointmentButtonOnAction" style="-fx-background-color: FFC700;" text="Appointment">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></Button>
+            <Label layoutX="15.0" layoutY="115.0" text="FOOTBALLIFY" textFill="#ffcc00">
+               <font>
+                  <Font name="Arial Black" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="logOutButton" layoutX="58.0" layoutY="587.0" mnemonicParsing="false" onAction="#logOutButtonOnAction" style="-fx-background-color: FFC700;" text="Log Out">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></Button>
+            <Button fx:id="quitButton" layoutX="73.0" layoutY="633.0" mnemonicParsing="false" onAction="#quitButtonOnAction" style="-fx-background-color: FFC700;" text="Quit">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></Button>
+            <ImageView fitHeight="103.0" fitWidth="106.0" layoutX="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/288976.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="accountButton" alignment="CENTER" layoutX="58.0" layoutY="331.0" mnemonicParsing="false" onAction="#accountButtonOnAction" style="-fx-background-color: FFC700;" text="Account">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </left>
+   <center>
+      <ScrollPane prefViewportHeight="881.0" prefViewportWidth="1080.0">
+         <content>
+            <Pane fx:id="mainPane" prefHeight="1000.0" prefWidth="1058.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="74.0" layoutY="24.0" prefHeight="394.0" prefWidth="413.0" style="-fx-background-color: ebebeb;">
+                     <children>
+                        <ImageView fitHeight="230.0" fitWidth="385.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/279263682_326165012992014_6224045104592483158_n.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="nameLabel" alignment="CENTER" layoutX="90.0" layoutY="250.0" prefHeight="21.0" prefWidth="233.0" text="name">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="descriptionLabel" layoutX="29.0" layoutY="271.0" prefHeight="21.0" prefWidth="355.0" text="Description:">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="adressLabel" layoutX="29.0" layoutY="294.0" prefHeight="21.0" prefWidth="355.0" text="Adress:">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="choiceBox" layoutX="37.0" layoutY="348.0" prefWidth="150.0" style="-fx-background-color: FFC700;" />
+                        <Button fx:id="bookButton" layoutX="253.0" layoutY="348.0" mnemonicParsing="false" onAction="#bookButtonOnAction" prefHeight="31.0" prefWidth="117.0" style="-fx-background-color: FFC700;" text="Book">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font></Button>
+                        <Label fx:id="priceLabel" alignment="CENTER" layoutX="43.0" layoutY="321.0" prefHeight="23.0" prefWidth="138.0" style="-fx-text-fill: green;" text="price">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="availablePlaceLabel" alignment="CENTER" layoutX="249.0" layoutY="321.0" prefHeight="21.0" prefWidth="124.0" style="-fx-text-fill: green;" text="places">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="568.0" layoutY="24.0" prefHeight="394.0" prefWidth="413.0" style="-fx-background-color: ebebeb;">
+                     <children>
+                        <ImageView fitHeight="230.0" fitWidth="385.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/pro_arena.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="nameLabel1" alignment="CENTER" layoutX="90.0" layoutY="250.0" prefHeight="21.0" prefWidth="233.0" text="name">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="descriptionLabel1" layoutX="29.0" layoutY="271.0" prefHeight="21.0" prefWidth="355.0" text="Description:">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="adressLabel1" layoutX="29.0" layoutY="294.0" prefHeight="21.0" prefWidth="355.0" text="Adress:">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="choiceBox1" layoutX="37.0" layoutY="348.0" prefWidth="150.0" style="-fx-background-color: FFC700;" />
+                        <Button fx:id="bookButton1" layoutX="253.0" layoutY="348.0" mnemonicParsing="false" onAction="#bookButtonOnAction1" prefHeight="31.0" prefWidth="117.0" style="-fx-background-color: FFC700;" text="Book">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font></Button>
+                        <Label fx:id="priceLabel1" alignment="CENTER" layoutX="44.0" layoutY="321.0" prefHeight="23.0" prefWidth="137.0" style="-fx-text-fill: green;" text="price">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="availablePlaceLabel1" alignment="CENTER" layoutX="249.0" layoutY="321.0" prefHeight="21.0" prefWidth="124.0" style="-fx-text-fill: green;" text="places">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="74.0" layoutY="475.0" prefHeight="394.0" prefWidth="413.0" style="-fx-background-color: ebebeb;">
+                     <children>
+                        <ImageView fitHeight="230.0" fitWidth="385.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/ams_sports_center.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="nameLabel2" alignment="CENTER" layoutX="90.0" layoutY="250.0" prefHeight="21.0" prefWidth="233.0" text="name">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="descriptionLabel2" layoutX="29.0" layoutY="271.0" prefHeight="21.0" prefWidth="355.0" text="Description:">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="adressLabel2" layoutX="29.0" layoutY="294.0" prefHeight="21.0" prefWidth="355.0" text="Adress:">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="choiceBox2" layoutX="37.0" layoutY="348.0" prefWidth="150.0" style="-fx-background-color: FFC700;" />
+                        <Button fx:id="bookButton2" layoutX="253.0" layoutY="348.0" mnemonicParsing="false" onAction="#bookButtonOnAction2" prefHeight="31.0" prefWidth="117.0" style="-fx-background-color: FFC700;" text="Book">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font></Button>
+                        <Label fx:id="priceLabel2" alignment="CENTER" layoutX="42.0" layoutY="321.0" prefHeight="23.0" prefWidth="141.0" style="-fx-text-fill: green;" text="price">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="availablePlaceLabel2" alignment="CENTER" layoutX="249.0" layoutY="321.0" prefHeight="21.0" prefWidth="124.0" style="-fx-text-fill: green;" text="places">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="568.0" layoutY="475.0" prefHeight="394.0" prefWidth="413.0" style="-fx-background-color: ebebeb;">
+                     <children>
+                        <ImageView fitHeight="230.0" fitWidth="385.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/rio_fotbal.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="nameLabel3" alignment="CENTER" layoutX="90.0" layoutY="250.0" prefHeight="21.0" prefWidth="233.0" text="name">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="descriptionLabel3" layoutX="29.0" layoutY="271.0" prefHeight="21.0" prefWidth="355.0" text="Description:">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="adressLabel3" layoutX="29.0" layoutY="294.0" prefHeight="21.0" prefWidth="355.0" text="Adress:">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="choiceBox3" layoutX="37.0" layoutY="348.0" prefWidth="150.0" style="-fx-background-color: FFC700;" />
+                        <Button fx:id="bookButton3" layoutX="253.0" layoutY="348.0" mnemonicParsing="false" onAction="#bookButtonOnAction3" prefHeight="31.0" prefWidth="117.0" style="-fx-background-color: FFC700;" text="Book">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font></Button>
+                        <Label fx:id="priceLabel3" alignment="CENTER" layoutX="43.0" layoutY="321.0" prefHeight="23.0" prefWidth="139.0" style="-fx-text-fill: green;" text="price">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="availablePlaceLabel3" alignment="CENTER" layoutX="249.0" layoutY="321.0" prefHeight="21.0" prefWidth="124.0" style="-fx-text-fill: green;" text="places">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="appointmentMessage" alignment="CENTER" layoutX="75.0" layoutY="432.0" prefHeight="23.0" prefWidth="908.0">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="22.0" prefWidth="1280.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="messageLabel" alignment="CENTER" layoutX="426.0" layoutY="1.0" prefHeight="23.0" prefWidth="518.0" text="Label" textFill="#ffc700">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </top>
+</BorderPane>
