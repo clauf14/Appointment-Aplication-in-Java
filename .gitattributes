@@ -1,5 +1,6 @@
-*.csharp linguist-detectable=false 
+*.csharp linguist-detectable=true 
 *.java linguist-detectable=true  
-*.js linguist-detectable=false  
-*.html linguist-detectable=false  
-*.xml linguist-detectable=false
+*.js linguist-detectable=true  
+*.html linguist-detectable=true  
+*.xml linguist-detectable=true
+*.fxml linguist-detectable=true
