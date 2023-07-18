@@ -2,15 +2,15 @@
 ![Logo](https://i.imgur.com/wOUxPX3.png)
 
 
-# ⚽Football Appointment Aplication
+# ⚽ Football Appointment Aplication
 
 
 
  
 
-## Author
+## 👨‍🎓 Author
 
-👨‍🎓 [@clauf14](https://www.github.com/clauf14)
+[@clauf14](https://www.github.com/clauf14)
 
 
 ## ❔ What is this aplication about?
