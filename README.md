@@ -42,7 +42,7 @@ Account Page
 
 Appointment Page
 ![Appointment Page](https://i.imgur.com/Z4T8sfO.png)
-## Features
+## ✔️ Features
 
 - It provides a foundation for different appointment apps
 - Register/Login page with working connection to a database
@@ -52,12 +52,12 @@ Appointment Page
 - Secure connection
 
 
-## Demo
+## 📽️ Demo
 
 [Football Appointment Application Presentation](https://youtu.be/6qYj1UdOwKk)
 
 
-## Tech Stack
+## ℹ️ Tech Stack
 
 **Client:** Java, JPA, EclipseLink
 
