@@ -57,9 +57,14 @@ Appointment Page
 [Football Appointment Application Presentation](https://youtu.be/6qYj1UdOwKk)
 
 
-## ℹ️ Tech Stack
+## ⚙️ Tech Stack
 
 **Client:** Java, JPA, EclipseLink
 
 **Server:** **will follow**
+
+
+## 🙏 Feedback
+
+If you have any feedback, please reach out to me at claudiufurtea@gmail.com
 
