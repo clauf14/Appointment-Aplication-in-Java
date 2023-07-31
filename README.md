@@ -50,6 +50,7 @@ Appointment Page
 - Updating or deleting the user account
 - Unique usernames
 - Secure connection
+- Unit test cases
 
 
 ## 📽️ Demo
