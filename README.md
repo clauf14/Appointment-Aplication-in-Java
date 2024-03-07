@@ -13,7 +13,7 @@
 [@clauf14](https://www.github.com/clauf14)
 
 
-## ❔ What is this aplication about?
+## ❔ What is this aplication about? <br>
 This aplication offers a secure and simple experience for the client, such as creating an account, logging in with the created account, the posibility to view all the dates and places available provided by the respective football pitch, a nice description and adress.
 
  After the appointment has been made, the user can view it in the "Appointment" page, and if this client no longer wishes to have the appointment, he can delete it, and the same applies to the account where you can also update the account.
